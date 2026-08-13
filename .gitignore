@@ -1,0 +1,31 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Local data and generated artifacts
+data/
+datasets/
+artifacts/
+models/
+outputs/
+submissions/
+submission.csv
+*.log
+
+# Common ML file types that should stay local unless explicitly curated
+*.parquet
+*.feather
+*.h5
+*.joblib
+*.pkl
+*.pickle
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
