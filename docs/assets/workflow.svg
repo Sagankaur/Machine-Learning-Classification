@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="240" viewBox="0 0 920 240">
+  <rect width="920" height="240" fill="#fbf7ef"/>
+  <text x="40" y="38" font-family="Georgia, serif" font-size="24" fill="#1f2937">Figure 1. Final Research Pipeline</text>
+  <rect x="40" y="80" width="150" height="90" rx="14" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="76" y="115" font-family="Arial, sans-serif" font-size="18" fill="#1e3a8a">Raw CSV Data</text>
+  <text x="60" y="140" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a">train.csv / test.csv</text>
+  <rect x="220" y="80" width="170" height="90" rx="14" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="243" y="112" font-family="Arial, sans-serif" font-size="18" fill="#0c4a6e">Feature Engineering</text>
+  <text x="240" y="137" font-family="Arial, sans-serif" font-size="14" fill="#0c4a6e">date expansion, dedupe,</text>
+  <text x="250" y="156" font-family="Arial, sans-serif" font-size="14" fill="#0c4a6e">outlier capping</text>
+  <rect x="420" y="80" width="170" height="90" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="456" y="112" font-family="Arial, sans-serif" font-size="18" fill="#14532d">Preprocessing</text>
+  <text x="446" y="137" font-family="Arial, sans-serif" font-size="14" fill="#14532d">imputation, scaling,</text>
+  <text x="437" y="156" font-family="Arial, sans-serif" font-size="14" fill="#14532d">cardinality reduction, OHE</text>
+  <rect x="620" y="80" width="120" height="90" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text x="648" y="118" font-family="Arial, sans-serif" font-size="18" fill="#78350f">Models</text>
+  <text x="640" y="143" font-family="Arial, sans-serif" font-size="14" fill="#78350f">LGBM / XGB / GBM</text>
+  <rect x="770" y="80" width="110" height="90" rx="14" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+  <text x="793" y="118" font-family="Arial, sans-serif" font-size="18" fill="#7f1d1d">Output</text>
+  <text x="782" y="143" font-family="Arial, sans-serif" font-size="14" fill="#7f1d1d">metrics +</text>
+  <text x="790" y="160" font-family="Arial, sans-serif" font-size="14" fill="#7f1d1d">submission</text>
+  <line x1="190" y1="125" x2="220" y2="125" stroke="#334155" stroke-width="3"/>
+  <polygon points="220,125 208,118 208,132" fill="#334155"/>
+  <line x1="390" y1="125" x2="420" y2="125" stroke="#334155" stroke-width="3"/>
+  <polygon points="420,125 408,118 408,132" fill="#334155"/>
+  <line x1="590" y1="125" x2="620" y2="125" stroke="#334155" stroke-width="3"/>
+  <polygon points="620,125 608,118 608,132" fill="#334155"/>
+  <line x1="740" y1="125" x2="770" y2="125" stroke="#334155" stroke-width="3"/>
+  <polygon points="770,125 758,118 758,132" fill="#334155"/>
+</svg>

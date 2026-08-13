@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <rect width="920" height="420" fill="#fffdf8"/>
+  <text x="40" y="38" font-family="Georgia, serif" font-size="24" fill="#1f2937">Figure 2. Best Recorded Competition Scores by Model Family</text>
+  <line x1="110" y1="80" x2="110" y2="350" stroke="#374151" stroke-width="2"/>
+  <line x1="110" y1="350" x2="860" y2="350" stroke="#374151" stroke-width="2"/>
+  <text x="56" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.00</text>
+  <text x="148" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.10</text>
+  <text x="248" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.20</text>
+  <text x="348" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.30</text>
+  <text x="448" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.40</text>
+  <text x="548" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.50</text>
+  <text x="648" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.60</text>
+  <text x="748" y="355" font-family="Arial, sans-serif" font-size="14" fill="#374151">0.70</text>
+  <text x="40" y="110" font-family="Arial, sans-serif" font-size="16" fill="#111827">Dummy</text>
+  <rect x="110" y="90" width="546" height="28" fill="#cbd5e1"/>
+  <text x="666" y="109" font-family="Arial, sans-serif" font-size="14" fill="#111827">0.5100</text>
+  <text x="40" y="160" font-family="Arial, sans-serif" font-size="16" fill="#111827">Linear Regression</text>
+  <rect x="110" y="140" width="675" height="28" fill="#93c5fd"/>
+  <text x="795" y="159" font-family="Arial, sans-serif" font-size="14" fill="#111827">0.6312</text>
+  <text x="40" y="210" font-family="Arial, sans-serif" font-size="16" fill="#111827">Logistic Regression</text>
+  <rect x="110" y="190" width="674" height="28" fill="#60a5fa"/>
+  <text x="794" y="209" font-family="Arial, sans-serif" font-size="14" fill="#111827">0.6304</text>
+  <text x="40" y="260" font-family="Arial, sans-serif" font-size="16" fill="#111827">Gradient Boosting</text>
+  <rect x="110" y="240" width="671" height="28" fill="#86efac"/>
+  <text x="791" y="259" font-family="Arial, sans-serif" font-size="14" fill="#111827">0.6274</text>
+  <text x="40" y="310" font-family="Arial, sans-serif" font-size="16" fill="#111827">XGBoost</text>
+  <rect x="110" y="290" width="672" height="28" fill="#4ade80"/>
+  <text x="792" y="309" font-family="Arial, sans-serif" font-size="14" fill="#111827">0.6281</text>
+  <text x="40" y="360" font-family="Arial, sans-serif" font-size="16" fill="#111827">LightGBM</text>
+  <rect x="110" y="340" width="677" height="28" fill="#16a34a"/>
+  <text x="797" y="359" font-family="Arial, sans-serif" font-size="14" fill="#111827">0.6327</text>
+</svg>

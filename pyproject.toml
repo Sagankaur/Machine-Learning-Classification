@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "system-threat-forecaster"
+version = "0.1.0"
+description = "Research codebase for System Threat Forecaster classification experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "joblib",
+  "lightgbm",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "xgboost",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

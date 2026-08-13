@@ -1,50 +1,60 @@
 # Machine Learning Classification
 
-Classification work for the Kaggle `System Threat Forecaster` competition.
+Classification research project for the Kaggle `System Threat Forecaster` competition.
 
 Kaggle notebook: <https://www.kaggle.com/code/sagandeep/23f2003511-notebook-t12025>  
 Competition: <https://www.kaggle.com/competitions/System-Threat-Forecaster>
 
-## What is in this repo
+## Repository Layout
 
-- `notebooks/system-threat-forecaster-final.ipynb`: the curated final Kaggle notebook.
-- `notebooks/mlp-project-legacy.ipynb`: the older repo notebook kept for reference.
-- `docs/experiment-history.md`: condensed history of the 45 Kaggle notebook iterations.
-- `requirements.txt`: Python packages needed to run the notebook locally.
+- `docs/technical-report.md`: IEEE-style technical research report
+- `docs/experiment-history.md`: condensed summary of the full notebook archive
+- `docs/assets/`: report figures
+- `notebooks/system-threat-forecaster-final.ipynb`: curated final notebook
+- `notebooks/mlp-project-legacy.ipynb`: older notebook preserved for reference
+- `src/system_threat_forecaster/`: reusable research code extracted from notebook logic
+- `scripts/train_model.py`: entrypoint for running the refactored pipeline
+- `requirements.txt`: dependency list
+- `pyproject.toml`: package metadata for the `src/` layout
 
-## What is not in this repo
-
-- Kaggle download scripts and notebook-sync utilities.
-- All 40 retained versioned notebooks from the private working archive.
-- Competition datasets, submissions, model binaries, and other generated outputs.
-
-Those belong in a separate working/archive folder, not in the public project repo.
-
-## Recommended local layout
+## Recommended Local Layout
 
 ```text
 Machine-Learning-Classification/
+├── artifacts/
+├── data/
 ├── docs/
 ├── notebooks/
-├── data/              # keep local, gitignored
-├── requirements.txt
+├── scripts/
+├── src/
 ├── .gitignore
+├── pyproject.toml
+├── requirements.txt
 └── README.md
 ```
 
-## Running locally
+`data/` and `artifacts/` are intentionally gitignored.
+
+## Research Summary
+
+- Total notebook versions studied: `45`
+- Best recorded score: `0.63270`
+- Best experiment: `v37`, tuned `LightGBM`
+- Final curated notebook in this repo: `v45`
+
+## Running the Refactored Pipeline
 
 1. Create a virtual environment.
 2. Install dependencies with `pip install -r requirements.txt`.
-3. Place the Kaggle competition files under a local `data/` folder.
-4. Update notebook paths from Kaggle input paths to your local dataset paths before running.
+3. Place the Kaggle `train.csv` and `test.csv` files in `data/`.
+4. Run `python scripts/train_model.py`.
 
-## Results summary
+The script writes outputs to `artifacts/`, including:
 
-- Best Kaggle score in the version history: `0.63270`
-- Best-scoring version: `v37` using tuned `LightGBM`
-- Final curated notebook in this repo: `v45`, which reflects the cleaned end-state workflow and final modeling pipeline
+- trained pipeline artifact
+- `submission.csv`
+- `metrics.json`
 
 ## Notes
 
-This repo is intentionally curated. The full notebook archaeology lives outside the repo in the separate `kaggle_notebooks` workspace folder.
+This repository is intentionally curated. The full private Kaggle notebook archive and helper scripts remain outside the repo in the separate `kaggle_notebooks` workspace folder.
