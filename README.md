@@ -5,6 +5,10 @@ Classification research project for the Kaggle `System Threat Forecaster` compet
 Kaggle notebook: <https://www.kaggle.com/code/sagandeep/23f2003511-notebook-t12025>  
 Competition: <https://www.kaggle.com/competitions/System-Threat-Forecaster>
 
+## Task Statement
+
+The task was to build a binary classification model that predicts whether a computer system is likely to be infected by malware. Each row contains system telemetry, hardware metadata, operating-system attributes, antivirus/update information, and related security configuration features. The required output is a `target` prediction for every row in the test set, and submissions were evaluated using `accuracy`.
+
 ## Repository Layout
 
 - `docs/technical-report.md`: IEEE-style technical research report
@@ -55,6 +59,3 @@ The script writes outputs to `artifacts/`, including:
 - `submission.csv`
 - `metrics.json`
 
-## Notes
-
-This repository is intentionally curated. The full private Kaggle notebook archive and helper scripts remain outside the repo in the separate `kaggle_notebooks` workspace folder.

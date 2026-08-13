@@ -80,7 +80,7 @@ The experiment archive contains 45 versioned notebooks, with 40 retained working
 
 Figure 1 summarizes the final consolidated workflow represented by both the final notebook and the new `src/` research package.
 
-![Final pipeline](assets/workflow.svg)
+![Figure 1. Final pipeline workflow.](assets/workflow.svg)
 
 ### B. Data Preprocessing
 
@@ -212,9 +212,25 @@ SVC with RBF kernel performed better than many alternatives, with `v17` reaching
 
 Figure 2 compares the best recorded scores across key model families that emerged during the study.
 
-![Model comparison](assets/model-comparison.svg)
+![Figure 2. Best recorded competition scores by model family.](assets/model-comparison.svg)
 
 The best observed competition score was therefore produced by a tuned LightGBM model rather than by a linear model, support vector machine, neural network, or voting ensemble.
+
+### E. Local Reproduction Run
+
+Using the current refactored LightGBM pipeline, the local validation accuracy was `0.6188`. The run also produced a trained pipeline artifact, a submission file, and evaluation metadata under `artifacts/`. This result is lower than the best archived leaderboard score, which is expected because the refactored pipeline is a cleaned reproducible baseline rather than a byte-for-byte recreation of the single strongest competition notebook.
+
+Figures 3 through 7 summarize the local data profile and validation behavior of the refactored pipeline.
+
+![Figure 3. Class distribution in the local training dataset.](assets/class-distribution.png)
+
+![Figure 4. Top 10 features by missing-value percentage.](assets/missing-values-top10.png)
+
+![Figure 5. Validation confusion matrix for the local LightGBM run.](assets/confusion-matrix.png)
+
+![Figure 6. Validation ROC curve for the local LightGBM run.](assets/roc-curve.png)
+
+![Figure 7. Validation precision-recall curve for the local LightGBM run.](assets/precision-recall-curve.png)
 
 ## VII. Discussion
 

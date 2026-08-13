@@ -35,8 +35,19 @@ class ExperimentConfig:
 
     @property
     def train_path(self) -> Path:
-        return self.data_dir / self.train_file
+        return self.resolve_data_dir() / self.train_file
 
     @property
     def test_path(self) -> Path:
-        return self.data_dir / self.test_file
+        return self.resolve_data_dir() / self.test_file
+
+    def resolve_data_dir(self) -> Path:
+        candidates = (
+            self.data_dir,
+            Path("."),
+            Path(".."),
+        )
+        for candidate in candidates:
+            if (candidate / self.train_file).exists() and (candidate / self.test_file).exists():
+                return candidate
+        return self.data_dir
